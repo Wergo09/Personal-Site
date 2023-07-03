@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Cambria, sans-serif;
+}
+
+.line-header {
+    text-align: center;
+    margin: 20px;
+    color: #000;
+  }
+  
+.line-header::after {
+    content: '';
+    display: block;
+    width: 50px;
+    margin: 25px auto;
+    border-bottom: 2px solid;
+  }
+  
+.intro-text {
+    font-size: 16px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-style: italic;
+    color:#000;
+  }
+
+.container{
+    position: relative;
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.menu {
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224);
+    background-attachment: scroll;
+}
+
+.main {
+    flex-basis: 900px;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    align-items: baseline;
+}
+
+.photo_mine {
+    border-radius: 100px;
+    border: 3px solid #fff;
+    outline: 2px solid rgba(255, 255, 255, 0.438);
+    width: 150px;
+    height: 200px;
+    display:block;
+    transition: .5s;
+}
+
+.photo_mine:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+-23px 0 20px -23px rgba(0, 0, 0, .8),
+23px 0 20px -23px rgba(0, 0, 0, .8),
+0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.photo_mine_margin {
+    margin:50px auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.name_meet {
+    color:black;
+    font-size: 25px;;
+}
+
+.name_margin {
+    margin: 20px;
+}
+
+.name_present {
+    color:black;
+    font-size: 20px;
+}
+
+.name_margin {
+    margin: 20px;
+}
+
+.name_colored {
+    transition: .5s;
+    color:rgba(109, 209, 255, 0.705);
+}
+
+.name_colored:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+.menu_list {
+    text-align: center;
+}
+
+.list_margin {
+    margin: 20px 20px;
+}
+
+.menu_list_positions {
+    list-style-type: none;
+}
+
+.menu_list_position {
+    font-size: 20px;
+}
+
+.menu_list_link {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu_list_link:after {
+    background-color: #ffffff; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}    
+
+.menu_list_link:hover:after,
+.menu_list_link:focus:after {
+    width: 100%;
+}
+
+.menu_list_link:hover {
+    color: #337AB7;
+    /*-webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;*/
+}
+
+footer {
+    color:rgb(0, 0, 0);
+}
+
+.cloud {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    padding-bottom: 56.25%;
+    height: 502px;
+    background-color: rgb(156, 234, 253);
+    background-size: cover;
+}
+.cloudcontent {
+    position: relative;
+    padding:30px;
+    color: #337AB7;
+    font-size:22px;
+    font-weight:bold;
+    z-index:100;
+}
+.cloud img {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-user-select: none; 
+    -moz-user-select: none;   
+    -ms-user-select: none;
+    user-select: none;    
+    pointer-events: none;
+}
+@-webkit-keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%)
+    }
+    to {
+        -webkit-transform: translateX(-100%)
+    }
+}
+@-moz-keyframes animCloud {
+    from {
+        -moz-transform: translateX(100%)
+    }
+    to {
+        -moz-transform: translateX(-100%)
+    }
+}
+@keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+.cloud1 {
+    -webkit-animation: animCloud 20s infinite linear;
+    -moz-animation: animCloud 20s infinite linear;
+    animation: animCloud 20s infinite linear
+}
+.cloud2 {
+    -webkit-animation: animCloud 40s infinite linear;
+    -moz-animation: animCloud 40s infinite linear;
+    animation: animCloud 40s infinite linear
+}
+.cloud3 {
+    -webkit-animation: animCloud 60s infinite linear;
+    -moz-animation: animCloud 60s infinite linear;
+    animation: animCloud 60s infinite linear
+}
+.cloud4 {
+    -webkit-animation: animCloud 80s infinite linear;
+    -moz-animation: animCloud 80s infinite linear;
+    animation: animCloud 80s infinite linear
+}
+
+.btn-outline {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 16px 40px;
+    color: #fff;
+    transition: .5s;
+  }
+  
+  .btn-outline:hover,
+  .btn-outline:focus {
+    background-color: #fff;
+    color: #000000;
+  }
+
+.btn-outline-main {
+    position: absolute;
+    margin: 400px 200px;
+}
+
+.transition {
+    margin: 10px auto;
+    font-size: 1em; /* Размер шрифта */
+    color: #5a5a5a; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+}
+/*  CSS код для линии над заголовком */
+.transition:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+.transition:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+.transition:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+.transition:hover:after {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer_down {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.footer_adaptive_my_works {
+    flex: 1;
+}
