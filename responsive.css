@@ -1,0 +1,89 @@
+@media screen and (max-width:960px) {
+    .cloud {
+        height: 861px;
+    }
+    
+    .btn-outline-main {
+        position: absolute;
+        margin: 400px 100px;
+    }
+
+    .footer {
+        margin-top: 320px;
+    }
+
+    .transition {
+        margin-top: 100px;
+    }
+
+    .about_me_main {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .grid_works {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footer_adaptive_my_works {
+        margin-top: 820px;
+    }
+
+    .contact1 {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        flex-basis: 200px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .menu_list_positions {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list_margin {
+        margin: 5px 5px;
+    }
+
+    .cloud {
+        height: 471px;
+    }
+
+    .main {
+        flex-basis: 300px;
+    }
+
+    .btn-outline-main {
+        margin: 300px 25px;
+    }
+
+    .grid_works {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .example {
+        align-content: center;
+        width: 370px;
+        height: 520px;
+    }
+
+    .contact1 {
+        width: 100%;
+        height: 100%;
+    }
+}
